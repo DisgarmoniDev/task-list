@@ -1,0 +1,48 @@
+.newTask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 700px;
+  height: auto;
+
+  &__field {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    input {
+      width: 400px;
+      height: 30px;
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    textarea {
+      width: 400px;
+      min-height: 100px;
+      height: auto;
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      resize: none;
+    }
+  }
+
+  .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    width: 400px;
+  }
+
+  &__btn {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,80 @@
+.taskItem {
+  margin-top: 40px;
+  width: 1000px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    width: 20px;
+    height: 20px;
+  }
+
+  input:checked + &__description {
+    text-decoration: line-through;
+    color: rgb(44, 150, 44);
+  }
+
+  input:checked ~ &__dateCompletion {
+    text-decoration: line-through;
+    color: rgb(44, 150, 44);
+  }
+
+  &__description {
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    &-title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    
+    &-text {
+      font-size: 16px;
+    }
+  }
+
+  &__dateCompletion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 170px;
+
+    &-title {
+      font-size: 14px;
+    }
+
+    &-date {
+      font-weight: 600;
+      color: rgb(44, 150, 44);
+    }
+  }
+
+
+  .timeIsUp{
+    color: red;
+  }
+
+  .linkFile {
+    display: none;
+  }
+  
+  &__file{
+    width: 64px;
+    height: auto;
+  }
+
+  
+
+  &__remove {
+    color: red;
+    font-size: 35px;
+    cursor: pointer;
+  }
+}

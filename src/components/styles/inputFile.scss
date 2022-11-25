@@ -1,0 +1,46 @@
+.uploadFile {
+  width: 400px;
+  form {
+    
+    
+    .castomFile {
+      input {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        width: 280px;
+        min-width: 280px;
+        box-sizing: border-box;
+        margin: 0;
+      }
+    }
+
+    button {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      width: 100px;
+      height: auto;
+      padding: 4px;
+      box-sizing: border-box;
+      margin-left: 20px;
+    }
+  }
+  .uploadProgress {
+    display: none;
+    width: 400px;
+    height: 24px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .visible {
+    display: block;
+    width: 400px;
+    height: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(44, 150, 44);
+    text-align: center;
+    margin: 0;
+    opacity: 1;
+  }
+}
